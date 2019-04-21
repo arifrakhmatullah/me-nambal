@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/panduantambahlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Tambah Lokasi" />
+
+    <TextView
+        android:id="@+id/keterangantambahlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="@string/keterangantambahlokasi"
+        android:layout_below="@id/panduantambahlokasi" />
+
+    <TextView
+        android:id="@+id/panduan12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/panduan12"
+        android:layout_below="@id/keterangantambahlokasi" />
+
+    <TextView
+        android:id="@+id/tipstambahlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="@string/tipstambahlokasi"
+        android:layout_below="@id/panduan12" />
+
+    <TextView
+        android:id="@+id/panduan13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/panduan13"
+        android:layout_below="@id/tipstambahlokasi"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/panduan9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/panduan9"
+        android:layout_below="@id/panduan13"
+        />
+
+        <ImageView
+            android:id="@+id/homepanduan9"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:src="@drawable/panduan9"
+            android:scaleType="fitXY"
+            android:layout_below="@id/panduan9" />
+
+    <TextView
+        android:id="@+id/panduan10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/panduan10"
+        android:layout_below="@id/homepanduan9" />
+
+    <ImageView
+        android:id="@+id/homepanduan10"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:src="@drawable/panduan10"
+        android:scaleType="fitXY"
+        android:layout_below="@id/panduan10"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/panduan11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/panduan11"
+        android:layout_below="@id/homepanduan10"/>
+
+    <ImageView
+        android:id="@+id/homepanduan11"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:src="@drawable/panduan11"
+        android:scaleType="fitXY"
+        android:layout_below="@id/panduan11"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

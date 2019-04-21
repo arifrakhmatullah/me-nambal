@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/simbollokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:text="Simbol Lokasi Tambal Ban dan Bensin Eceran" />
+
+    <TextView
+        android:id="@+id/simbollokasi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/simbollokasi1"
+        android:layout_below="@id/simbollokasi"
+        android:inputType="textMultiLine"/>
+
+        <ImageView
+            android:id="@+id/homesimbollokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/simbol_maker_tambalban"
+            android:scaleType="fitXY"
+            android:layout_below="@id/simbollokasi1" />
+
+    <TextView
+        android:id="@+id/simbollokasi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/simbollokasi2"
+        android:layout_below="@id/homesimbollokasi"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:id="@+id/homesimbollokasi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/simbol_maker_bensineceran"
+        android:scaleType="fitXY"
+        android:layout_below="@id/simbollokasi2"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

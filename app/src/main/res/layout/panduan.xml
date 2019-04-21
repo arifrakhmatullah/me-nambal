@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/temukan_lokasi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:onClick="temukanlokasi"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_temukanlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/temukan_lokasi" />
+
+            <TextView
+                android:id="@+id/temukanlokasi"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Temukan Lokasi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/simbollokasi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:onClick="simbollokasi"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignTop="@+id/temukan_lokasi"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_simbol_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/simbol_lokasi" />
+
+            <TextView
+                android:id="@+id/marker_map"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Simbol Lokasi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/panduanmasuk"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:onClick="panduanmasuk"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/temukan_lokasi"
+        android:layout_alignLeft="@+id/temukan_lokasi"
+        android:layout_alignStart="@+id/temukan_lokasi">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_masuk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/masuk" />
+
+            <TextView
+                android:id="@+id/masuk"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Masuk"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tambahlokasi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:onClick="tambahlokasi"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_alignTop="@+id/panduanmasuk"
+        android:layout_alignLeft="@+id/simbollokasi"
+        android:layout_alignStart="@+id/simbollokasi">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_tambah_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tambah_lokasi" />
+
+            <TextView
+                android:id="@+id/tambah_lokasi"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Tambah Lokasi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

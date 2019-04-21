@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/gambar_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/placeinformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gambar"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/placeinformation2"
+            fontPath="fonts/Poppins-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="@string/placeinformation"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/placeinformation">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/placeinformation"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/lattmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lngtmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lattmb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lngtmb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nama_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/jenis_usaha_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nama_tmb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alamat_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/jenis_usaha_tmb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jam_operasional_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/alamat_tmb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/jam_operasional_tmb"
+            android:layout_centerVertical="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no_hp_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/harga_tmb"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/isi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/relativeLayout6">
+
+        <TextView
+            android:id="@+id/deskripsi_lokasi"
+            fontPath="fonts/Poppins-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="@string/deskripsi_detail_lokasi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/relativeLayout7">
+
+        <TextView
+            android:id="@+id/deskripsi_tmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbb" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/call"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:onClick="call"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call" />
+
+            <TextView
+                android:id="@+id/tulisan_call"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Panggil"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/message"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignTop="@+id/call"
+        android:layout_toRightOf="@+id/call"
+        android:layout_toEndOf="@+id/call">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/message" />
+
+            <TextView
+
+                android:id="@+id/tulisan_cari_bensineceran"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Whatsapp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/button_rute_tambalban"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_alignTop="@+id/message"
+        android:layout_toRightOf="@+id/message"
+        android:layout_toEndOf="@+id/message"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_rute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rute" />
+
+            <TextView
+
+                android:id="@+id/tulisan_cari_bensineceran2"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Rute"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/button_laporkan_tambalban"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.33"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="button_laporkan_tambalban"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="11dp"
+        android:layout_alignTop="@+id/button_rute_tambalban"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/gambar_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/report" />
+
+            <TextView
+
+                android:id="@+id/tulisan_report"
+                fontPath="fonts/Poppins-SemiBold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="Laporkan"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freelance.menambal.me_nambal">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="24"/>
+    <!-- Tambahan -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_menambal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_menambal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashscreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".tambalban"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".bensineceran"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".detail_tambalban"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".detail_bensineceran"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".menu_laporkan_tambalban"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".menu_laporkan_bensineceran"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MyLocationMaps">
+        </activity>
+
+        <activity
+            android:name=".Login_actionlogin"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Login_MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Login_signout"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Login_MyLocationMaps"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".panduan_temukanlokasi_main"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".panduan_simbollokasi_main"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".panduan_masuk_main"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".panduan_tambahlokasi_main"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- tambahan -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBeD0gXKZJ9Pwe_GNXqr3-vJQlQya3u2r0" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- tambahan -->
+
+    </application>
+
+    <supports-screens>
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        android:resizeable="true"
+    </supports-screens>
+</manifest>

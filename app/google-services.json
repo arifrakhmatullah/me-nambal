@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "313228641392",
+    "firebase_url": "https://menambalproject.firebaseio.com",
+    "project_id": "menambalproject",
+    "storage_bucket": "menambalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313228641392:android:41019f4c91c4de81",
+        "android_client_info": {
+          "package_name": "com.freelance.menambal.me_nambal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313228641392-7j8ubuja1v3sab4kqnmhge8i8rc9tojo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freelance.menambal.me_nambal",
+            "certificate_hash": "13449a2fd43a516f5539f905bdab0106bf898c75"
+          }
+        },
+        {
+          "client_id": "313228641392-t1drg6u6o03dic4cglk5t1tmv6russgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs0aRLHAeuo-AqP2wdQKe1pX_rgJFfDpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313228641392-t1drg6u6o03dic4cglk5t1tmv6russgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

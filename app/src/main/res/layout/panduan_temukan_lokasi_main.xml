@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/caratemukanlokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Cara Temukan Lokasi" />
+
+    <TextView
+        android:id="@+id/panduan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/panduan1"
+        android:layout_below="@id/caratemukanlokasi"
+        android:inputType="textMultiLine"/>
+
+        <ImageView
+            android:id="@+id/homepanduan"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:src="@drawable/panduan1"
+            android:scaleType="fitXY"
+            android:layout_below="@id/panduan1" />
+
+    <TextView
+        android:id="@+id/panduan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/panduan2"
+        android:layout_below="@id/homepanduan"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:id="@+id/homepanduan2"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/panduan2"
+        android:scaleType="fitXY"
+        android:layout_below="@id/panduan2"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/panduan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/panduan3"
+        android:layout_below="@id/homepanduan2"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:id="@+id/homepanduan3"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/panduan3"
+        android:scaleType="fitXY"
+        android:layout_below="@id/panduan3"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/menumenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/menumenu"
+        android:layout_below="@id/homepanduan3"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:id="@+id/homemenumenu"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/menumenu"
+        android:layout_below="@id/menumenu"/>
+
+    <TextView
+        android:id="@+id/panduan4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="@string/panduan4"
+        android:layout_below="@id/homemenumenu"
+        android:inputType="textMultiLine"/>
+
+    <ImageView
+        android:id="@+id/homepanduan4"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:src="@drawable/panduan4"
+        android:layout_below="@id/panduan4"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

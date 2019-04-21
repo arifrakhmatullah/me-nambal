@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+          android:icon="@drawable/home"
+          android:title="Beranda">
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addlocation"
+            android:icon="@drawable/addlocation"
+            android:title="Tambah Lokasi" />
+        <item
+            android:id="@+id/panduan"
+            android:icon="@drawable/panduan"
+            android:title="Panduan" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/about_us"
+            android:title="Tentang Kami" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Keluar" />
+    </group>
+</menu>

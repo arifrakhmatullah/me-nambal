@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/menambal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView4" />
+    <TextView
+        android:id="@+id/menambal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="fonts/Poppins-Bold.otf"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        android:text="Me-Nambal"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/kepanjanganmenambal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="fonts/Poppins-Bold.otf"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        android:text="Minyak Eceran dan Tambal Ban"
+        android:layout_below="@+id/menambal"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="fonts/Poppins-Bold.otf"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        android:text="Version 1.0"
+        android:layout_below="@+id/kepanjanganmenambal"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/detail_aplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="206dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/detailaplikasi"
+            fontPath="fonts/Poppins-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="@string/tentangkami"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_aplikasi"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:layout_below="@+id/detail_aplikasi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tentang_kami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:inputType="textMultiLine"
+            android:text="@string/isitentangkami"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/socialmedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/isi"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/social_media"
+            fontPath="fonts/Poppins-Bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="@string/socialmedia"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/garis2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/socialmedia"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bbb" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook"
+        android:onClick="facebook"
+        android:id="@+id/facebook"
+        android:layout_alignTop="@+id/linkedin"
+        android:layout_alignLeft="@+id/kepanjanganmenambal"
+        android:layout_alignStart="@+id/kepanjanganmenambal" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/linkedin"
+        android:onClick="linkedin"
+        android:id="@+id/linkedin"
+        android:layout_alignTop="@+id/instagram"
+        android:layout_alignRight="@+id/kepanjanganmenambal"
+        android:layout_alignEnd="@+id/kepanjanganmenambal" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/instagram"
+        android:onClick="instagram"
+        android:layout_below="@+id/garis2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>

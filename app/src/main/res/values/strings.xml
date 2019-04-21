@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Me-Nambal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <string name="intro">Halo Pengendara</string>
+    <string name="isi_intro">Ada Kendala Hari ini ?</string>
+    <string name="selamat_datang">Selamat Datang di Me-Nambal</string>
+    <string name="ayo_login">Ayo Masuk dan Tambahkan Lokasi Baru !</string>
+    <string name="tambalban">Tambal Ban</string>
+    <string name="bensineceran">Minyak Eceran</string>
+    <string name="cari">Temukan Tambal Ban atau Bensin Eceran Di Sekitarmu</string>
+    <string name="placeinformation">Informasi Lokasi</string>
+    <string name="deskripsi_detail_lokasi">Deskripsi</string>
+    <string name="tentangkami">Tentang Kami</string>
+    <string name="isitentangkami">Me-Nambal adalah aplikasi berbasis android yang dapat mencari lokasi tambal ban atau bensin eceran terdekat. Aplikasi me-nambal ini adalah solusi bagi pengendara yang kerap kali mengalami kondisi kebocoran ban atau kehabisan bahan bakar. Pada aplikasi ini memiliki beberapa fitur yaitu mencari lokasi tambal ban atau bensin eceran, dapat melakukan panggilan terhadap pengusaha tambal ban atau bensin eceran, mendapatkan rute ke lokasi tujuan, melaporkan lokasi yang tidak benar dan juga fitur chat yang akan terhubung ke aplikasi Whatsapp.</string>
+    <string name="socialmedia">Sosial Media</string>
+    <string name="google_name">Masuk Dengan Akun Google</string>
+    <string name="google_name_signout">Keluar</string>
+    <string name="kalimatlogout">Terimakasih Telah Menggunakan Aplikasi Me-Nambal</string>
+    <string name="selogan">Kebocoran Ban,Kehabisan Bahan Bakar Me-Nambal Solusinya!</string>
+
+    <string name="panduan1">1. Buka Aplikasi, Pilih Tombol Tambal ban (Untuk Mencari Tambal ban) dan Pilih Tombol Bensin Eceran (Untuk Mencari Bensin Eceran)</string>
+    <string name="panduan2">2. Pilih Tambal Ban atau Bensin Eceran yang ingin dituju</string>
+    <string name="panduan3">3. Detail Lokasi Ditampilkan, Pilih Fitur Sesuai Kebutuhan</string>
+    <string name="menumenu">4. Panggil Berfungsi Untuk Melakukan Panggilan Kepemilik Usaha, Whatsapp Berfungsi Untuk Mengirim Pesan Melalui Aplikasi Whatsapp, Rute Berfungsi Untuk Menampilkan Rute Perjalanan Dari Lokasi User Menuju Lokasi Tujuan, Laporkan Berfungsi Untuk Melaporkan Lokasi-Lokasi Yang Tidak Benar</string>
+    <string name="panduan4">5. Jika Ingin Melaporkan Lokasi Yang Tidak Benar, Anda Dapat Memilih Menu Lapor Disini Dan Isi Form Laporkan Lokasi</string>
+    <string name="simbollokasi1">1. Simbol Lokasi Tambal Ban Terlihat Seperti Gambar Dibawah </string>
+    <string name="simbollokasi2">2. Simbol Lokasi Bensin Eceran Terlihat Seperti Gambar Dibawah </string>
+    <string name="panduan5">1. Pilih Menu Masuk</string>
+    <string name="panduan6">2. Klik Tombol Masuk Dengan Akun Google</string>
+    <string name="panduan7">3. Pilih Akun Google Yang Ingin Digunakan</string>
+    <string name="panduan9">1. Pilih Menu Tambah Lokasi, Menu Bisa Dipilih Jika Sudah Dalam Kondisi Masuk ke Sistem</string>
+    <string name="panduan10">2. Isi Form Tambah Lokasi Dengan Lengkap</string>
+    <string name="panduan11">3. Pilih Set Koordinat Untuk Mendapatkan Titik Lokasi</string>
+    <string name="panduan12">Titik Lokasi Penambahan Lokasi Baru Diambil Berdasarkan Titik Lokasi Pengguna Berada</string>
+    <string name="panduan13">Sebelum Menentukan Titik Koordinat Hendaklah Menunggu 1 hingga 2 Menit, Untuk Mendapatkan Titik Lokasi Yang Lebih Akurat</string>
+    <string name="keterangantambahlokasi">Keterangan</string>
+    <string name="tipstambahlokasi">Tips</string>
+
+
+    <string-array name="pilihjenisusaha">
+        <item>--Pilih--</item>
+        <item>Tambal Ban</item>
+        <item>Bensin Eceran</item>
+    </string-array>
+
+</resources>
